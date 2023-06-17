@@ -32,6 +32,10 @@ $("#hex").on("click", function () {
   $("#hex").css("border-radius", "20px");
 });
 
+$("#mylocation").on("click", function(){
+  $("#location").toggle();
+}) ;
+
 // Toggle between light and dark mode
 const checkbox = document.getElementById('checkbox');
 checkbox.addEventListener('change', ()=>{
@@ -86,6 +90,5 @@ function scrollFunction() {
   }
 }
 function topFunction() {
-  document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0; 
 }
